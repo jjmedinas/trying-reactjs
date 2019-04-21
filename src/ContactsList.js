@@ -22,7 +22,7 @@ class ContactsList extends React.Component {
                 // console.log("contact name " + contact.name)
                 // console.log("Result " + contact.name.indexOf(this.state.search))
 
-                return contact.name.indexOf(this.state.search) !== -1;
+                return contact.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
             }
         );
         return (
